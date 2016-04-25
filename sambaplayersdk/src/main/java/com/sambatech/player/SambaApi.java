@@ -303,7 +303,6 @@ public class SambaApi {
 
 				if (playerConfig.has("theme") && !playerConfig.getString("theme").toLowerCase().equals("default"))
 					media.themeColor = (int)Long.parseLong("FF" + playerConfig.getString("theme").replaceAll("^#*", ""), 16);
-
 				if (apiConfig.has("sttm")) {
 					JSONObject sttm = apiConfig.getJSONObject("sttm");
 					media.sttmUrl = sttm.optString("url", "http://sttm.sambatech.com.br/collector/__sttm.gif");
